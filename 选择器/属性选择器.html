@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性选择器</title>
+    <style>
+        /* 通过属性名和属性值来匹配标签 */
+        /* 1.使用属性名进行匹配        */
+        /* [color] {
+            color: red;
+        } 
+        */
+        /*2.使用属性名+属性值进行匹配*/
+        /* [color="#FFAA00"]{
+            color:red;
+        } */
+        /*3.匹配所有属性名+以指定值开头的标签*/
+        /* [color^="#FF"]{
+            color:red;
+        } */
+        /*4.匹配所有属性名+以指定值结尾的标签*/
+        /* [color$="00"]{
+            color:red;
+        } */
+        /*5.匹配所有属性中包含指定值的所有元素*/
+        [color*="F"]{
+            color:red;
+        }
+    </style>
+</head>
+
+<body>
+    <p color="#FFaadd">第一段落</p>
+    <h2 color="#FFAA00">第一标题</h2>
+
+
+</body>
+</html>

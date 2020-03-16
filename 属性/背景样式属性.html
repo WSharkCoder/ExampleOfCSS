@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景演示属性</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            /* 背景颜色设置 */
+            background-color: red;
+        }
+
+        .box1 {
+            width: 1000px;
+            height: 1000px;
+
+            /*
+             背景图片设置 
+             背景图片默认为平铺
+            */
+            background-image: url(images/img1.jpg);
+            /*
+            背景图片是否平铺设置
+            参数值：
+            repeat 平铺
+            repeat-x  x轴平铺
+            repeat-y  y轴平铺
+            no-repeat   不平铺
+            */
+            background-repeat: no-repeat;
+            border :1px solid red;
+
+        }
+        .box2{
+            width: 1500px;
+            height: 1000px ;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid red;
+            background-image: url(images/img1.jpg);
+            background-repeat: no-repeat;
+            /* 设置背景图片位置 */
+            /* 设置水平位置，和垂直位置 */
+            /* 1.英文设置
+            水平位置: left center  right
+            垂直位置：top  center bottom; */
+            /* background-position:  right bottom; */
+            /* 2.像素设置 */
+            /* background-position: 10px 10px; */
+            /* 3.% 设置 */
+            background-position: 50% 50%;
+            
+
+
+            /*设置背景图片固定或滚动*/
+            /* 取值范围：fixed 固定 srcoll 滚动 */
+            background-attachment: fixed;
+
+
+         
+
+        }
+        .box4{
+            width: 1500px;
+            height: 1000px ;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid red;
+               /* background 简写属性：属性不定，个数不定，位置不定 ， */
+               background:url(images/img1.jpg) no-repeat  50% 50%  fixed;
+
+        }
+        
+          
+        
+    </style>
+    
+</head>
+
+<body>
+    <!-- <div class="box"></div>
+    <div class="box1"></div> -->
+    <!-- <div class="box2"></div> -->
+    <div class="box4"></div>
+</body>
+
+</html>

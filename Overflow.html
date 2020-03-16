@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow清除浮动</title>
+    <style>
+        .ul {
+            border: 1px solid red;
+            list-style-type: none;
+            overflow: hidden;
+        }
+
+        .li1 {
+            background-color: red;
+            width: 120px;
+            float: left;
+            height: 100px;
+        }
+
+        .li2 {
+            background-color: blue;
+            width: 120px;
+            float: left;
+            height: 100px;
+
+        }
+        .li3 {
+            background-color: green;
+            width: 120px;
+            float: right;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="ul">
+        <li class="li1"></li>
+        <li class="li2"></li>
+        <li class="li3"></li>
+    </ul>
+    <h2>HELLO</h2>
+
+</body>
+</html>

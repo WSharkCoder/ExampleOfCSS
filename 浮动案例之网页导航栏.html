@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动案例之网站导航栏</title>
+    <style>
+        /* CSS第一步，将HTML中的外边距与内填充进行清除 */
+        * {
+            /* 内填充 */
+            padding: 0px;
+            /* 外边距 */
+            margin: 0px;
+        }
+
+        body {
+            background-image: url(images/img1.jpg);
+
+        }
+
+        .div {
+            width: 960px;
+            height: 100px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .div ul {
+            list-style-type: none;
+        }
+        .div ul li{
+            /* 向左浮动 */
+            float: left;
+            width: 120px;
+            height: 50px;
+            line-height: 50px;
+            background-color: green;
+        }
+        a:link,a:visited{
+            color:black;
+            text-decoration: none;
+        }
+        a:hover{
+            color:blue;
+            
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="div">
+        <ul>
+            <li><a href="#">网站</a></li>
+            <li><a href="#">网站</a></li>
+            <li><a href="#">网站</a></li>
+            <li><a href="#">网站</a></li>
+            <li><a href="#">网站</a></li>
+            <li><a href="#">网站</a></li>
+            <li><a href="#">网站</a></li>
+            <li><a href="#">网站</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

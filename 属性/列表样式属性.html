@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表样式属性</title>
+    <style>
+        /* .ul li {
+            /*设置无序列表是否添加序列标记，值：none(无标记) circle(空心圆) square(正方型) disc(实心圆) */
+            /* list-style-type: circle; */
+
+        /* }  */
+
+        .ulInside li {
+            border: 1px solid red;
+            /*设置边框*/
+            height: 30px;
+            line-height: 30px;
+            list-style-position: inside;
+        }
+
+        .ulOutside li {
+            border: 1px solid red;
+            /*设置边框*/
+            height: 30px;
+            line-height: 30px;
+            list-style-position: outside;
+
+        }
+        /* .picture li{
+            list-style-image:  url(images/2.png);
+        }
+        .setAll
+        {
+           
+                集成 list-style-type,list-style-position, list-style-image 的作用;
+        
+             list-style: utl(images/2.png) outside; 
+        
+                类似于字体属性中的font属性，但是list-style对于属性设置没有限制；即，属性值个数和循序可以随意
+           
+        }  */
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <a href="images/2.png"></a>
+    
+
+    <div class="ul">
+        <h2>设置无序列列表的列表标记</h2>
+        <ul>
+            <li>武汉</li>
+            <li>上海</li>
+            <li>北京</li>
+        </ul>
+    </div> -->
+    <h2>设置无序列表列表标记位置</h2>
+    <ul class="ulInside">
+        
+        <li>武汉</li>
+        <!-- <li>上海</li>
+        <li>北京</li> -->
+    </ul>
+    <ul class="ulOutside">
+        <li>上海</li>
+        <!-- <li>上海</li>
+        <li>北京</li> -->
+    </ul>
+    
+    <!-- <h2>设置无序列表的列表标记为图片</h2>
+    <ul class="picture">
+        <li >武汉</li>
+        <li>上海</li>
+        <li>北京</li>
+    </ul>
+     -->
+</body>
+
+</html>

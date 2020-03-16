@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin塌陷现象</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 50px;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin-top: 50px;
+        }
+
+        .span1 {
+            background-color: red;
+            margin-right: 50px;
+        }
+
+        .span2 {
+            background-color: blue;
+            margin-left: 50px;
+        }
+
+        .box4 {
+            width: 100px;
+            border: 2px solid red;
+        }
+
+        .box5 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 50px;
+            float: left;
+
+        }
+
+        .box6 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            float: left;
+            margin-top: 50px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <!--margin垂直塌陷现象 即：margin不取叠加值而是取最大值 -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <!-- margin水平方向无叠加现象 -->
+    <span class="span1">1</span>
+    <span class="span2">2</span>
+
+    <!-- 浮动消除margins塌陷现象 -->
+    <div class="box4">
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </div>
+</body>
+</html>

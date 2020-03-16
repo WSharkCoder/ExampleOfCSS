@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相邻标签选择器</title>
+    <style>
+        /*
+        格式：E + F{属性：值}
+        满足条件才能匹配相应的标签：　
+        条件一：E元素与F元素满足兄弟关系，平辈关系
+        条件二：E元素与F元素必须紧挨着,就是之间没有任何元素阻挡
+        条件三: F元素必须在元素E的下面
+        */
+        .div + p{
+            color: rebeccapurple;
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <p>第一段落</p>
+    <div class="div">
+        <h2>标题一</h2>
+    </div>
+    <p>第二段落</p>    
+    
+</body>
+</html>

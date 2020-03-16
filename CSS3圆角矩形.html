@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆角矩形</title>
+    <style>
+       div{
+           width: 100px;
+           height: 100px;
+           border:1px solid red;
+       }
+       .box1{
+           /* 设置圆角矩形 */
+           /* border-radius: 左上 右上 右下 左下 */
+           border-radius: 10px 45px 20px 25px;
+       }
+       .box2{
+           
+           border-radius: 40px;
+       }
+       .box3{
+           /* 圆 */
+           border-radius: 50px;
+       }
+       .box4{
+           /* 椭圆 */
+           height: 50px;
+           border-radius: 50px;
+       }
+       .box5{
+           /* 上半圆 */
+           height:50px;
+           border-radius:50px 50px 0px 0px ;
+       }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+</body>
+</html>

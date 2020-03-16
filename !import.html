@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>!important提升属性优先级</title>
+    <style>
+        /*!important提升属性的优先级至无穷大*/
+        h1{
+            color:red  !important;
+            text-decoration: none;
+        }
+        .color{
+            color:blue;
+            text-decoration: underline;
+        }
+        /*不能提升继承的属性的权重*/
+        
+        
+    </style>
+</head>
+<body>
+    <h1 class="color" >红色标题</h1>
+    
+    
+</body>
+</html>

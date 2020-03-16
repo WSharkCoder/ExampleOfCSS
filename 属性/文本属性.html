@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本属性</title>
+    <style>
+        .red {
+            /*文本颜色：默认值为黑色*/
+            color: red;
+        }
+
+        .center {
+            /*文本位置：默认值left,可选值：right,cneter*/
+            text-align: center;
+        }
+
+        .line {
+            /*文本修饰符,可选值：none(去掉修饰符)，underline(下划线),line-through(删除线)，overline(上划线)*/
+            text-decoration: underline;
+
+        }
+        .upcase{
+            /*英文字符大小写，可选值capitalize(首字母大写),uppercase(大写)，lowercase(小写)*/
+            text-transform: uppercase;
+            /*英文字母间距，值px*/
+            letter-spacing:10px ;
+            word-spacing: 20px;
+        
+        }
+        .em
+        {
+            /*首行缩进,值em或px,em表示一个中文字符空间*/
+            text-indent: 2em;
+        }
+        .height-ceter{
+            height: 40px;
+            line-height: 40px;
+            border: 10;
+            border-color: red;
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <p>
+        文本显示为：<span class="red">红色</span>
+    </p>
+    <p class="center">
+        文本居中：
+            居中
+        
+    </p>
+    <p>
+        文本下划线：<span class="line">
+            下划线
+        </span>
+    </p>
+    <p>
+        英文文本大写：<span class="upcase">hello !</span>
+    </p>
+    <p class="em">
+        首行缩进
+    </p>
+    <p class="height-ceter">
+        文本居中
+    </p>
+</body>
+
+</html>

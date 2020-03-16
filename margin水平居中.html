@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin auto 实现盒子水平居中</title>
+    <style>
+        .box{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .span{
+            background-color: blue;
+            margin:100px  auto;
+        }
+        .box1{
+            background-color: green;
+            margin-left: auto;
+            margin-right: auto;
+            width:100px;
+            height: 100px;
+            float: left;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 只有块级元素能够使用margin auto实现水平居中，行内元素不能实现水平居中 
+        且块级元素必须有宽度width
+    -->
+    <div class="box"></div>
+    <span class="span">TEXT</span>
+    <!-- 只有标准文档流才能实现margin atuo水平居中 -->
+    <div class="box1"></div>
+</body>
+</html>

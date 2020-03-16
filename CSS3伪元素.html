@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素</title>
+    <style>
+        .box{
+            width: 1000px;
+           border: 2px solid red;
+        }
+        /* ::first-letter 伪元素 操作第一个字符 */
+        .box::first-letter{
+            font-size: 40px;
+        }
+        /* ::first:line　伪元素 操作第一行 */
+        .box::first-line{
+            font-size: 40px;
+        }
+        /* ::before 伪元素  最前端添加文本或标签 */
+        .box::before{
+            content:"HELLO";
+        }
+        /* ::after 伪元素 最后添加文本内容或标签 */
+        .box::after{
+            content: "WORD";
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        sdfasdfasdfasdfasdfasdfsadfasdf
+    </div>
+</body>
+</html>

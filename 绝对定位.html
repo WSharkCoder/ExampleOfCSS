@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位</title>
+    <style>
+        /* 绝对定位是相对于 具有定位的 祖辈元素进行定位 */
+        /*绝对定位脱离标准文档流*/
+
+        .box1{
+            width: 360px;
+            border:1px solid red;
+            margin-top: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+        .box1 div{
+            width: 100px;
+            height: 100px;
+        }
+        .box2{
+            background-color: blue;
+        }
+        .box3{
+            background-color: black;
+            position: absolute;
+            right: 0px;
+            top:0px;
+        }
+        .box4{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+    
+</body>
+</html>
